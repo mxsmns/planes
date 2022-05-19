@@ -35,5 +35,4 @@ class AircraftDict(TypedDict):
 
 
 def parse_json(data: str) -> AircraftDict:
-    parsed_data: AircraftDict = json.loads(data)
-    return parsed_data
+    return json.loads(data)
